@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username">
+
+        <com.kevin.library.PwdEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            app:hide_drawable="@drawable/hide_password"
+            app:password_visible="false"
+            app:show_drawable="@drawable/show_password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_text">
+
+        <com.kevin.library.PwdEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="confirm password"
+            app:hide_drawable="@drawable/hide_password"
+            app:password_visible="true"
+            app:show_drawable="@drawable/show_password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm">
+
+        <com.kevin.library.PwdEditText
+            android:id="@+id/password_edit_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            app:hide_text="@string/hide_text"
+            app:password_visible="false"
+            app:show_as_text="true"
+            app:show_text="@string/show_text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_text_1">
+
+        <com.kevin.library.PwdEditText
+            android:id="@+id/password_edit_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hide_text="@string/hide_text"
+            app:password_visible="false"
+            app:show_as_text="true"
+            app:show_text="@string/show_text" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pwd</string>
+    <string name="hide_text">hide</string>
+    <string name="show_text">show</string>
+</resources>
